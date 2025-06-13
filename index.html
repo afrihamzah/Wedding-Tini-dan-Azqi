@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Tini & Azqi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm&family=Cormorant+Garamond:wght@400;600;700&family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Simply CountDown -->
+    <link rel="stylesheet" href="Countdown/simplyCountdown.theme.default.css" />
+    <script src="Countdown/simplyCountdown.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <main
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        data-aos-easing="ease-out"
+      >
+        <p>The Wedding Of</p>
+        <h1 class="mb-3">Tini & Azqi</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown mt-5"></div>
+        <a
+          href="#home"
+          id="btn-hero"
+          class="btn btn-lg mt-5"
+          onClick="enablescroll()"
+          >Lihat Undangan</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand fixed-bottom justify-content-center">
+      <ul class="navbar-nav nav-justified w-75 bg-white p-2 rounded-4 gap-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#home"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-house-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+              />
+              <path
+                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mempelai"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#info"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-calendar-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-images"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+              <path
+                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gifts"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-gift-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#thanks"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              class="bi bi-chat-dots-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section
+      class="home mx-auto text-center d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="frame">
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container position-absolute align-items-center">
+        <h1>Tini & Azqi</h1>
+        <p class="shadow-xl">Senin, 23 Juni 2025</p>
+      </div>
+    </section>
+
+    <section id="mempelai" class="mempelai">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-8 text-center mb-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <h5 class="fw-bold">Bismillahirrahmanirrahim</h5>
+            <p>
+              Maha suci Allah, yang telah menciptakan MakhlukNya
+              berpasang-pasangan, Ya Allah dengan segala kerendahan hati
+              berkahilah dan ridhoilah pernikahan putra-putri kami
+            </p>
+          </div>
+        </div>
+
+        <div class="container text-center nama-mempelai">
+          <div class="row">
+            <div
+              class="col-12 mt-5"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+            >
+              <h1>Sri Kartini, S.Pd</h1>
+              <p>Putri Dari <br />Bapak Ajen & Ibu Sumi</p>
+            </div>
+            <div
+              class="col-lg-6 offset-lg-3"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+            >
+              <h2>Dengan</h2>
+            </div>
+            <div
+              class="col-12 mt-4"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+            >
+              <h1>M. Azqi Rojabi, M.Pd</h1>
+              <p>
+                Putra Dari <br />Bapak Alm. H. Abdul Mukti <br />& Ibu Hj.
+                Sopiah
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes" id="quotes">
+      <div>
+        <div
+          class="container text-center p-5"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out"
+          data-aos-duration="3000"
+        >
+          <p>
+            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenis sendiri, agar kamu cenderung
+            dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa
+            kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+          </p>
+          <h1>Qs. Ar-Rum 21</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-8 col-10 text-center"
+            data-aos="fade-down"
+            data-aos-easing="ease-out"
+            data-aos-duration="2000"
+          >
+            <h2 class="mb-5 mt-5">Informasi Acara</h2>
+            <p class="alamat">
+              Kp. Sasak Panjang Gang Sukun Rt 02/08 Ds. Sasak Panjang Kec.
+              Tajurhalang - Bogor
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.558402412443!2d106.7563478!3d-6.450693899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e83a313eaf9f%3A0x3eeb280181d94ba8!2sMajlis%20Talim%20BAITUL%20ILMI!5e0!3m2!1sid!2sid!4v1749819011099!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a
+              href="https://maps.app.goo.gl/MSXLdaefCPCFRL249"
+              target="_blank"
+              class="btn btn-light btn-sm my-3 mt-5 mb-5"
+              >Klik untuk membuka peta</a
+            >
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div
+            class="col-md-5 col-10"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in"
+            data-aos-duration="2000"
+          >
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header fw-bold">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 pemisah">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span
+                      >Senin <br />
+                      23 Juni 2025</span
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span
+                      >Pukul <br />
+                      15.00 - Selesai</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-5 col-10"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in"
+            data-aos-duration="2000"
+          >
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header fw-bold">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 pemisah">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span
+                      >Senin <br />
+                      23 Juni 2025</span
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span
+                      >Pukul <br />
+                      09.00 s/d 22.00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-8 col-10 text-center mb-5"
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 justify-content-center"
+        >
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/1.jpg" data-lightbox="gallery">
+              <img
+                src="img/mempelai/1.jpg"
+                alt="Ami Reza 3"
+                class="img-fluid w-100 rounded"
+                data-lightbox="gallery"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/2.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/2.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/3.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/3.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/4.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/4.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/5.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/5.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/6.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/6.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/7.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/7.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/8.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/8.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/9.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/9.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div
+            class="col mt-4"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="2000"
+          >
+            <a href="./img/mempelai/10.jpg" data-lightbox="gallery">
+              <img
+                src="./img/mempelai/10.jpg"
+                alt="Ami Reza 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 data-aos="zoom-in-down" data-aos-duration="2000" class="mb-5">
+              Wedding Gift
+            </h2>
+            <p class="mb-5" data-aos="zoom-in-down" data-aos-duration="2000">
+              Bagi Bapak/Ibu/Saudara/i yang berkenan memberikan tanda kasih,
+              dapat mengirimkan hadiah pernikahan melalui rekening berikut ini:
+            </p>
+            <div class="mb-5">
+              <img
+                src="img/BSI.png"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              />
+              <div
+                class="fw-bolds"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
+                <p class="account-number fw-bold">7198819071</p>
+                <p>Sri Kartini</p>
+                <button
+                  class="btn btn-gifts btn-lg py-3 my-4"
+                  data-account="7198819071"
+                >
+                  Salin Nomor Rekening
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="img/CIMB.png"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              />
+              <div
+                class="fw-bolds"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
+                <p class="account-number fw-bold">763811104200</p>
+                <p>M Azqi Rojabi</p>
+                <button
+                  class="btn btn-gifts btn-lg py-3 my-4"
+                  data-account="763811104200"
+                >
+                  Salin Nomor Rekening
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="thanks" id="thanks">
+      <div class="frame">
+        <img
+          src="img/frame-tl.png"
+          alt=""
+          class="frame-tl position-absolute top-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-tr.png"
+          alt=""
+          class="frame-tr position-absolute top-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-br.png"
+          alt=""
+          class="frame-br position-absolute bottom-0 end-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+        <img
+          src="img/frame-bl.png"
+          alt=""
+          class="frame-bl position-absolute bottom-0 start-0"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-easing="ease-out"
+        />
+      </div>
+      <div
+        class="container text-center"
+        data-aos="zoom-out"
+        data-aos-easing="ease-in"
+        data-aos-duration="2000"
+      >
+        <p>
+          Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
+          Bapak/Ibu/Saudara/i berkenan hadir dalam acara Pernikahan ini.
+        </p>
+        <p>Hormat Kami Yang Mengundang</p>
+        <h1>Tini & Azqi</h1>
+      </div>
+    </section>
+
+    <div id="audio-container">
+      <audio id="song" loop>
+        <source
+          src="Audio/Tulus - Teman Hidup Lirik Lagu Indonesia.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc-fill"></i>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // required
+        month: 6, // required
+        day: 23, // required
+        hours: 9, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enablescroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem("opened", "true");
+        playAudio();
+      }
+      function playAudio() {
+        song.volume = 0.3;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+        audioIconWrapper.style.animationPlayState = "running";
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc-fill");
+          audioIcon.classList.add("bi-pause-circle-fill");
+          audioIconWrapper.style.animationPlayState = "paused";
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc-fill");
+          audioIcon.classList.remove("bi-pause-circle-fill");
+          audioIconWrapper.style.animationPlayState = "running";
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      //   if (!localStorage.getItem("opened")) {
+      //     disableScroll();
+      //   }
+      disableScroll();
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

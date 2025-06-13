@@ -1,0 +1,469 @@
+:root {
+  --shadow: 1px 0px 1px rgba(217, 217, 217, 0.95);
+  --font: #3d6947;
+  --cream: #546c4e;
+}
+
+@font-face {
+  font-family: monotype;
+  src: url(font/Monotype\ Corsiva.ttf);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-image: url(img/bg.jpeg);
+  background-size:cover;
+  background-position:center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: opacity 1s ease-out, max-height 1s ease;
+  opacity: 1; /* Adjusted as per instructions */
+}
+
+.hero.hide {
+  opacity: 0;
+  max-height: 0; /* Adjusted as per instructions */
+  overflow: hidden; /* Adjusted as per instructions */
+  transition: opacity 1s ease, max-height 1s ease; /* Adjusted as per instructions */
+}
+
+.hero h1, .home h1 {
+  font-family: monotype;
+  font-size: 6rem;
+  text-shadow: var(--shadow);
+  color:var(--cream);
+}
+
+.hero h5{
+  font-size: 3rem;
+  color: var(--cream);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--font);
+}
+
+.hero a {
+  color: white;
+  background-color: var(--cream);
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: white;
+  color: var(--font);
+}
+
+.simply-countdown > .simply-section {
+  background-color: var(--cream);
+}
+
+.frame-tl,
+.frame-tr,
+.frame-br,
+.frame-bl {
+  width: 350px;
+}
+
+.narvbar-nav{
+  color:var(--font);
+}
+
+.navbar .nav-link{
+  padding: 10px 0;  
+  fill: white;
+  background-color:#537D5D;
+  border-radius: 10px;
+}
+
+
+.home {
+ min-height: 100vh;
+ position: relative;
+ background-repeat: no-repeat;
+ background-position: center bottom; /* Pastikan gambar tetap di tengah bawah */
+ background-size: cover; /* Atau contain, sesuaikan dengan preferensi */
+
+ /* Gradasi hijau lembut di atas, transparan putih di bawah */
+ background-image:
+   linear-gradient(to top, rgba(173, 216, 173, 0.6) 0%, rgba(255, 255, 255, 0) 30%), /* Hijau lembut transparan di atas */
+   linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #ffffff 100%), /* Putih transparan di bawah */
+   url(img/mempelai/1.jpg);
+
+ /* Ukuran untuk masing-masing layer */
+ background-size: auto, auto, cover; /* Atau contain untuk gambar */
+}
+
+.home .container{
+  display: flex;
+  flex-direction: column;
+  bottom: 20%;
+  text-align: center;
+}
+
+
+.home p{
+  font-size:2rem;
+  color: var(--font);
+  text-shadow: 1px 0px 1px rgba(245, 249, 244, 0.769);
+}
+.home button{
+  font-size: 2rem;
+  color: white;
+  background-color: #763306;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+}
+
+
+.mempelai {
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mempelai h5 {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--font);
+  margin-bottom: 20px;
+}
+
+.mempelai p,.nama-mempelai p,
+.info p,
+.rsvp p,
+.thanks p,
+.gifts p, .quotes p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--font);
+}
+
+.nama-mempelai h1 {
+  font-family: serif;
+  color: var(--cream);
+  text-shadow: var(--shadow);
+  font-family: monotype;
+}
+
+.nama-mempelai h2 {
+  font-family: serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  color: var(--font);
+  font-style: italic;
+  font-family: monotype;
+}
+
+.nama-mempelai p {
+  margin-bottom: 2rem;
+}
+
+.info,
+.rsvp,
+.thanks,
+.gallery,
+.gifts {
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.info h2,
+.thanks h1,
+.gallery h2,
+.gifts h2 {
+  color: var(--cream);
+  font-family: serif;
+  font-size: 4rem;
+  text-shadow: var(--shadow);
+}
+
+.info a {
+  color: white;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.244);
+  background-color: var(--cream);
+  border: 0;
+}
+
+.info a:hover {
+  color: var(--font);
+  background-color: white;
+}
+
+.info .card {
+  background-color: #ffffff43 !important;
+  background-size: cover;
+  color: var(--cream) !important;
+  letter-spacing: 0.1rem;
+  border: 2px solid var(--cream);
+  border-radius: 20px;
+  padding: 10px 30px 30px 30px;
+}
+
+.info .card-header {
+  border-bottom: 1px solid var(--cream);
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+  font-family: monotype;
+}
+
+.info .card-body {
+  font-family: serif;
+  font-weight: 300;
+  float: left;
+}
+
+.info .card-body ul {
+  font-style: normal;
+}
+
+.info .btn {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.gallery{
+  padding: 100px 0;
+}
+
+.rsvp button {
+  background-color: var(--cream);
+  border: 1px solid var(--cream);
+  color: white;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  box-shadow: var(--shadow);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: var(--font);
+}
+
+.quotes {
+  padding: 5px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  background-image: url(img/bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top: 20px solid var(--cream);
+  border-bottom: 20px solid var(--cream);
+
+}
+.quotes .container{
+  border: 5px solid var(--cream);
+}
+
+.quotes h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: var(--cream);
+  margin-top: 20px;
+}
+
+.gifts .container img {
+  width: 130px;
+  margin-bottom: -30px;
+  margin-bottom: 20px;
+}
+
+.gifts p {
+  margin-bottom: 0;
+}
+
+.gifts button {
+  background-color: var(--cream);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.gifts button:hover{
+  background-color: white;
+  color: var(--font);
+}
+
+.thanks h1 {
+  margin-top: -15px;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--cream);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  cursor: pointer;
+  color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  line-height: 0;
+
+}
+
+#audio-container {
+  position: fixed;
+  bottom: 15%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+section {
+  overflow: hidden;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bi-disc, .bi-pause-circle {
+  color: black;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  html {
+    font-size: 72.5%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 5px;
+  }
+
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .info .card-body .pemisah {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobuile */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 3px;
+  }
+
+  .hero h4,
+  .hero p,
+  .hero a,
+  .mempelai h5,
+  .mempelai p,
+  .info p,
+  .info .card-header,
+  .rsvp p,
+  .quotes p,
+  .thanks p,
+  .gifts p {
+    font-size: 2.2rem;
+  }
+
+  .info a,
+  .info span,
+  .info .btn,
+  .rsvp label,
+  .rsvp input,
+  .rsvp select,
+  .rsvp button {
+    font-size: 1.5rem;
+  }
+
+  .mempelai {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mempelai h1 {
+    font-size: 3rem;
+  }
+
+  .card-body span {
+    font-size: 15px;
+  }
+
+  .frame-tl,
+  .frame-tr,
+  .frame-bl,
+  .frame-br {
+    width: 150px;
+  }
+
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 343 */
+@media (max-width: 343px) {
+  html {
+    font-size: 45%;
+  }
+}
+
