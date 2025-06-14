@@ -63,3 +63,26 @@ allGiftButtons.forEach(button => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. Membuat objek untuk membaca parameter dari URL.
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // 2. Mengambil nama tamu dari parameter 'untuk'.
+    //    Contoh URL: .../index.html?untuk=Andi+Saputra
+    const namaTamu = urlParams.get('untuk');
+
+    // 3. Hanya jalankan kode jika parameter 'untuk' ditemukan di URL.
+    if (namaTamu) {
+      // 4. Cari elemen di HTML yang memiliki id="nama-tamu".
+      const elemenNamaTamu = document.getElementById('nama-tamu');
+      
+      // 5. Pastikan elemennya ada, lalu ganti isinya dengan nama tamu.
+      if (elemenNamaTamu) {
+        // Mengganti kode '+' dari URL menjadi spasi ' ' agar nama tampil benar.
+        elemenNamaTamu.innerText = namaTamu.replace(/\+/g, ' ');
+      }
+    }
+    
+  });
